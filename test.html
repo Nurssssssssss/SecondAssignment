@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Hover Demo</title>
+  <style>
+    body {
+      background: #f0f0f0; /* светлый фон */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 40px;
+    }
+
+    .card {
+      width: 200px;
+      height: 150px;
+      background: white;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      /* по умолчанию без тени */
+      box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+
+    /* при наведении */
+    .card:hover {
+      transform: scale(1.05); /* чуть увеличивается */
+      box-shadow: 0px 10px 25px rgba(0,0,0,0.5); /* появляется тень */
+    }
+  </style>
+</head>
+<body>
+  <div class="card">Наведи!</div>
+
+  <p>Это <span style="color: red;">красное слово</span> в обычном тексте.</p>
+
+
+</body>
+</html>
